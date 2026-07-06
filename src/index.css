@@ -150,3 +150,248 @@ label {
   font-size: 0.95rem;
   text-align: left;
 }
+
+
+.dashboard-page,
+.productos-page {
+  display: grid;
+  gap: 8px;
+  grid-auto-rows: max-content;
+}
+
+.navbar {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 12px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  box-shadow: var(--shadow);
+  height: fit-content;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--primary-strong);
+}
+
+.navbar-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.navbar-menu a {
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-menu a:hover {
+  background: var(--surface-soft);
+  color: var(--primary);
+}
+
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.sidebar {
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.sidebar h2 {
+  margin: 0;
+  color: var(--primary);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar li a {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 14px;
+  color: var(--text);
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.sidebar li a:hover {
+  background: var(--surface-soft);
+  border-color: rgba(37, 99, 235, 0.16);
+}
+
+.dashboard-content,
+.productos-content {
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.page-description {
+  margin: 8px 0 0;
+  color: var(--text-muted);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 18px 32px rgba(17, 24, 39, 0.05);
+  text-align: left;
+}
+
+.card h3 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  color: var(--primary-strong);
+}
+
+.card p {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.product-form-section,
+.product-table-section {
+  margin-top: 24px;
+  text-align: left;
+}
+
+.product-form-section h2,
+.product-table-section h2 {
+  margin-bottom: 18px;
+  color: var(--primary-strong);
+}
+
+.product-form {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 24px;
+  display: grid;
+  gap: 18px;
+}
+
+.product-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 16px;
+  margin-top: 16px;
+}
+
+.product-table th,
+.product-table td {
+  padding: 16px 14px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.product-table th {
+  background: var(--surface-soft);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.product-table tbody tr:hover {
+  background: #f4f7ff;
+}
+
+.product-table tr:last-child td {
+  border-bottom: none;
+}
+
+.product-table td {
+  color: var(--text-muted);
+}
+
+.productos-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -4px;
+}
+
+@media (max-width: 960px) {
+  #root {
+    padding: 16px;
+  }
+
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .login-card,
+  .dashboard-content,
+  .productos-content,
+  .sidebar {
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    justify-content: flex-start;
+  }
+}
