@@ -127,7 +127,26 @@ label {
   background: linear-gradient(135deg, var(--primary), var(--primary-strong));
   box-shadow: 0 20px 30px rgba(37, 99, 235, 0.2);
 }
-
 .primary-button:hover {
   transform: translateY(-1px);
+}
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 18px;
+  color: var(--primary-strong);
+  background: #ffffff;
+  border: 1px solid rgba(37, 99, 235, 0.18);
+}
+.secondary-button:hover {
+  background: #eff6ff;
+  transform: translateY(-1px);
+}
+.form-error {
+  margin: 0;
+  color: #dc2626;
+  font-size: 0.95rem;
+  text-align: left;
 }
