@@ -1,13 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from '../components/Navbar'
+import Sidebar from '../components/Sidebar'
 
 // Página de tablero principal con tarjetas de datos simulados
 function Dashboard() {
   return (
     <div className="dashboard-page">
-
+      <Navbar />
       <div className="dashboard-layout">
-
+        <Sidebar />
         <section className="dashboard-content">
           <div className="page-header">
             <div>
