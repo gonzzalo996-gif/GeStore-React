@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Button } from '../components/ui/button'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 
@@ -18,9 +19,9 @@ function Dashboard() {
                 Resumen de ventas y clientes.
               </p>
             </div>
-            <Link to="/productos" className="secondary-button">
-              Ir a Productos
-            </Link>
+            <Button asChild variant="secondary">
+              <Link to="/productos">Ir a Productos</Link>
+            </Button>
           </div>
           <div className="cards-grid">
             <article className="card">

@@ -1,4 +1,6 @@
 import React from 'react'
+import { Button } from './ui/button'
+import { Input } from './ui/input'
 
 // Formulario para registrar nuevos productos en Productos.jsx
 function ProductForm() {
@@ -8,8 +10,7 @@ function ProductForm() {
       <form className="product-form">
         <label>
           Nombre
-          <input
-            className="input-field"
+          <Input
             type="text"
             name="name"
             placeholder="Nombre del producto"
@@ -17,8 +18,7 @@ function ProductForm() {
         </label>
         <label>
           Precio
-          <input
-            className="input-field"
+          <Input
             type="number"
             name="price"
             placeholder="Precio"
@@ -26,8 +26,7 @@ function ProductForm() {
         </label>
         <label>
           Stock
-          <input
-            className="input-field"
+          <Input
             type="number"
             name="stock"
             placeholder="Cantidad disponible"
@@ -43,12 +42,10 @@ function ProductForm() {
           </select>
         </label>
         <div className="product-form-actions">
-          <button className="primary-button" type="button">
-            Guardar
-          </button>
-          <button className="secondary-button" type="reset">
+          <Button type="button">Guardar</Button>
+          <Button type="reset" variant="secondary">
             Limpiar
-          </button>
+          </Button>
         </div>
       </form>
     </section>

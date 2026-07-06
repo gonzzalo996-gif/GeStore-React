@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Button } from '../components/ui/button'
+import { Input } from '../components/ui/input'
 
 // Página de inicio de sesión en la aplicación
 function Login() {
@@ -29,8 +31,7 @@ function Login() {
         <form className="login-form" onSubmit={handleSubmit}>
           <label>
             Usuario
-            <input
-              className="input-field"
+            <Input
               type="text"
               name="username"
               value={username}
@@ -40,8 +41,7 @@ function Login() {
           </label>
           <label>
             Contraseña
-            <input
-              className="input-field"
+            <Input
               type="password"
               name="password"
               value={password}
@@ -50,9 +50,9 @@ function Login() {
             />
           </label>
           {errorMessage && <p className="form-error">{errorMessage}</p>}
-          <button className="primary-button" type="submit">
+          <Button type="submit" className="w-full">
             Iniciar sesión
-          </button>
+          </Button>
         </form>
       </div>
     </main>

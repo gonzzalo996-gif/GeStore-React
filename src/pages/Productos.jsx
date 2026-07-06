@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Button } from '../components/ui/button'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import ProductForm from '../components/ProductForm'
@@ -20,9 +21,9 @@ function Productos() {
                 Control de productos registrados en la tienda.
               </p>
             </div>
-            <Link to="/dashboard" className="secondary-button">
-              Volver al Dashboard
-            </Link>
+            <Button asChild variant="secondary">
+              <Link to="/dashboard">Volver al Dashboard</Link>
+            </Button>
           </div>
           <ProductForm />
           <ProductTable />
