@@ -3,13 +3,14 @@ import { useNavigate } from 'react-router-dom'
 import { Button } from '../components/ui/button'
 import { Input } from '../components/ui/input'
 
-// Página de inicio de sesión en la aplicación
+// Página de login donde uso useState para guardar lo que escribe el usuario
 function Login() {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [errorMessage, setErrorMessage] = useState('')
   const navigate = useNavigate()
 
+  // Validación simple en el login y luego voy a la página del dashboard
   const handleSubmit = (event) => {
     event.preventDefault()
 

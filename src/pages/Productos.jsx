@@ -6,7 +6,7 @@ import Sidebar from '../components/Sidebar'
 import ProductForm from '../components/ProductForm'
 import ProductTable from '../components/ProductTable'
 
-// Página con el formulario y la lista de productos
+// Página de productos con el formulario y la lista de productos
 function Productos() {
   return (
     <div className="productos-page">

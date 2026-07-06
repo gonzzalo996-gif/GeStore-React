@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from './ui/button'
 import { Input } from './ui/input'
 
-// Formulario para registrar nuevos productos en Productos.jsx
+// Formulario para agregar productos, con botones e inputs reutilizables
 function ProductForm() {
   return (
     <section className="product-form-section">

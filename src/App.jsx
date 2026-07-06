@@ -4,7 +4,7 @@ import Dashboard from './pages/Dashboard'
 import Productos from './pages/Productos'
 import './index.css'
 
-// App principal con rutas para las tres pantallas básicas
+// Esta es la app principal donde pongo las rutas para cada pantalla
 function App() {
   return (
     <BrowserRouter>

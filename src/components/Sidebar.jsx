@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-// Sidebar simple que se puede usar en el Dashboard y Productos
+// Sidebar simple para moverse entre dashboard y productos
 function Sidebar() {
   return (
     <aside className="sidebar">

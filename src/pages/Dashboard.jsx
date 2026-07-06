@@ -4,7 +4,7 @@ import { Button } from '../components/ui/button'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 
-// Página de tablero principal con tarjetas de datos simulados
+// Página del dashboard con tarjetas y el menú al lado
 function Dashboard() {
   return (
     <div className="dashboard-page">
