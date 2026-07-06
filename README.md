@@ -45,38 +45,34 @@ GeStore/
 
 ## Estructura del proyecto
 
+## 📁 Estructura del proyecto
+
+```text
 GeStore/
-│
 ├── public/
 │   ├── favicon.svg
 │   └── icons.svg
-│
 ├── src/
 │   ├── assets/
 │   │   ├── hero.png
 │   │   ├── react.svg
 │   │   └── vite.svg
-│   │
 │   ├── components/
 │   │   ├── ui/
-│   │   ├── Navbar.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Sidebar.jsx
 │   │   ├── ProductForm.jsx
-│   │   ├── ProductTable.jsx
-│   │   └── Sidebar.jsx
-│   │
+│   │   └── ProductTable.jsx
 │   ├── lib/
 │   │   └── utils.js
-│   │
 │   ├── pages/
 │   │   ├── Dashboard.jsx
 │   │   ├── Login.jsx
 │   │   └── Productos.jsx
-│   │
 │   ├── App.css
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
-│
 ├── .gitignore
 ├── eslint.config.js
 ├── index.html
@@ -87,7 +83,6 @@ GeStore/
 ├── vite.config.js
 └── README.md
 ```
-
 ---
 
 ## Instalación
